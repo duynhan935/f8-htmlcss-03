@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --header-bg: #10375c;
+}
+
 html,
 body {
     scroll-behavior: smooth;
@@ -17,3 +21,66 @@ body {
 }
 
 /* Common */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    /* dòng trên để cho khi thu nhỏ trang web thì không bị xuất hiện thanh cuộn ngang */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+.header {
+    min-height: 100vh;
+    /* để min để khi nội dung tăng lên thì nó tự động thay đổi cho phù hợp */
+    background: var(--header-bg);
+}
+
+.logo {
+    font-size: 1rem;
+    /* 1rem tương ứng với 10px, đặt vầy để xíu dùng cái em để tăng giảm kích thước logo dễ hơn*/
+    position: relative;
+    display: inline-flex;
+    /* logo đang để thẻ div nên độ rộng của nó bằng cái trang, để lại để độ rộng của nó bằng nội dung thôi */
+}
+
+.logo__circle::before,
+.logo__circle::after {
+    content: "";
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.logo__circle::before {
+    width: 3em;
+    height: 3em;
+    background: #2e80ce;
+}
+
+.logo__circle::after {
+    width: 1.6em;
+    height: 1.6em;
+    background: #ffffff;
+    position: absolute;
+    top: 1.1em;
+    left: 1.1em;
+}
+
+.logo__text {
+    margin-left: 0.6em;
+    color: #fff;
+    text-align: right;
+    line-height: 1.6em;
+}
+
+.logo__brand {
+    display: block;
+    /* block để cho hai chữ nó nằm trên 2 hàng */
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.logo__brand--small {
+    font-size: 1.2em;
+    font-weight: 300;
+}
