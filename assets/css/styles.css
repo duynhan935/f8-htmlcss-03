@@ -56,6 +56,17 @@ a {
     cursor: pointer;
 }
 
+.heading {
+    font-weight: 600;
+    line-height: 1.14;
+}
+
+.desc {
+    color: #c9d2da;
+    font-weight: 300;
+    line-height: 1.66;
+}
+
 /* Header */
 .header {
     min-height: 100vh;
@@ -127,7 +138,7 @@ a {
     display: flex;
 }
 
-.action__login,
+.header-action__login,
 .navbar__link {
     padding: 4px 21px;
     /* padding trên dưới để tăng khoảng cách bấm */
@@ -155,8 +166,83 @@ a {
 }
 
 /* Action */
-.action__signup {
+.header-action {
+    display: flex;
+    align-items: center;
+}
+/* vì tính chất của hai thẻ của hai nút sign in/out nên nó bị dư ra 1 khoảng trắng, nên ta phải chỉnh lại thẻ cha là display:flex */
+
+.header-action__signup {
     --height: 44px;
     min-width: 104px;
     font-size: 1.6rem;
+    margin-left: 7px;
+}
+
+/* Hero */
+
+.hero {
+    margin-top: 76px;
+}
+
+.hero__body {
+    display: flex;
+    align-items: center;
+}
+
+/* Hero left */
+
+.hero__left {
+    width: 44%;
+}
+
+.hero__heading {
+    color: #fff;
+    font-size: 7rem;
+    margin-bottom: 22px;
+}
+
+.hero__desc {
+    font-size: 1.8rem;
+    margin-bottom: 38px;
+    width: 468px;
+}
+
+.hero__contact {
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
+
+.hero__contact--desc {
+    color: #fff;
+    font-weight: 400;
+}
+
+/* Hero right */
+.hero__right {
+    flex-grow: 1;
+    margin-left: 113px;
+    justify-content: flex-end;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+}
+
+.hero__right--big {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: -6px;
+    position: relative;
+}
+
+.hero__right--small {
+    width: 210px;
+    height: 410px;
+    border-radius: 0px 6px 6px 0px;
+    object-fit: cover;
 }
