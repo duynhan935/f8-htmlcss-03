@@ -533,3 +533,58 @@ a {
 .member__control-next {
     rotate: 180deg;
 }
+
+/* Install */
+
+.install {
+    padding-top: 180px;
+}
+
+.install__body {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    background: #2e80ce;
+    padding: 0 70px;
+    height: 427px;
+    align-items: center;
+}
+
+.install__image {
+    width: 30%;
+}
+
+.install__image-img {
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    margin-top: -95px;
+}
+
+.install__info {
+    max-width: 586px;
+}
+
+.install__info-heading {
+    width: 470px;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 18px;
+}
+
+.install__info-desc {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66;
+    margin-bottom: 38px;
+}
+
+.install__row {
+    display: flex;
+    column-gap: 28px;
+}
+
