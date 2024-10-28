@@ -269,12 +269,12 @@ a {
     min-height: 100vh;
 }
 
-.service-heading,
-.service-desc {
+.service__heading,
+.service__desc {
     text-align: center;
 }
 
-.service-desc {
+.service__desc {
     width: 468px;
     margin-left: auto;
     margin-right: auto;
@@ -361,13 +361,13 @@ a {
     border-radius: 4px;
     background: #fff;
     align-items: center;
-    border: 16px solid #EAF6FF;
+    border: 16px solid #eaf6ff;
     padding: 43px 42px;
     transition: 0.25s;
 }
 
-.works-item:hover{
-    border: 16px solid #2E80CE;
+.works-item:hover {
+    border: 16px solid #2e80ce;
     transform: translateY(-16px);
     /* cái ở trên để khi hover vào thì nó nhảy lên 1 xí, X là ngang Y là dọc */
 }
@@ -395,5 +395,141 @@ a {
 
 .works-item__learn {
     margin-bottom: 43px;
-    color: #2E80CE;
+    color: #2e80ce;
+}
+
+/* Featured */
+.featured {
+    margin-top: 85px;
+    padding: 85px 0;
+}
+
+.featured__item {
+    display: flex;
+    align-items: center;
+}
+
+.featured__image {
+    width: 48%;
+    display: flex;
+    position: relative;
+    padding: 0 58px 121px 0;
+}
+
+.featured__image-big {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.featured__image-small {
+    width: 332px;
+    height: 370px;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 6px;
+}
+
+.featured__info {
+    margin-left: 130px;
+}
+
+.featured__info-heading {
+    margin-bottom: 18px;
+}
+
+.featured__info-desc {
+    margin-bottom: 38px;
+}
+
+/* Member */
+
+.member {
+    padding: 85px 0;
+    text-align: center;
+}
+
+.member__heading {
+    margin-bottom: 38px;
+}
+
+.member__head {
+    text-align: center;
+}
+
+.member__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+.member-item__img-bg {
+    padding-top: 28px;
+    background: #eaf6ff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.member-item:hover .member-item__thumb{
+    transform: scale(1.1);
+}
+
+.member-item__thumb {
+    max-width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    /* thêm display block để nó không bị dư ra 1 khoảng xanh */
+    transition: 0.25s;
+}
+
+.member__item-name {
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-top: 12px;
+}
+
+.member__item-desc {
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85;
+}
+
+.member__control {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+    gap: 18px;
+}
+
+.member__control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    color: #575f66;
+    outline: none;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.member__control-btn:hover {
+    background: #2e80ce;
+    border-color: #2e80ce;
+    color: #fff;
+    cursor: pointer;
+}
+
+.member__control-next {
+    rotate: 180deg;
 }
