@@ -188,7 +188,7 @@ a {
 }
 /* vì tính chất của hai thẻ của hai nút sign in/out nên nó bị dư ra 1 khoảng trắng, nên ta phải chỉnh lại thẻ cha là display:flex */
 
-.header-action__signup {
+.header-action__sign-up {
     --height: 44px;
     min-width: 104px;
     font-size: 1.6rem;
@@ -474,7 +474,7 @@ a {
     overflow: hidden;
 }
 
-.member-item:hover .member-item__thumb{
+.member-item:hover .member-item__thumb {
     transform: scale(1.1);
 }
 
